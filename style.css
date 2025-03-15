@@ -118,3 +118,10 @@ button{
         margin: auto;
     }
 }
+
+@media (width >= 1400px){
+    main{
+        width: 40%;
+        margin: auto;
+    }
+}
