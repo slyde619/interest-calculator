@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    --primary-color: hsl(142, 65%, 90%);
+    --bg-color: hsl(210, 17%, 968);
+    --green-200: hsl(152, 53%, 50%);
+    --green-400: hsl(155, 77%, 30%);
+    --green-800: hsl(159, 74%, 9%);
+    --ff: "PT Sans", sans-serif;
+    --border: 1px solid hsl(0, 0%, 92%);
+    --box-shadow: 0 5px 5px hsl(142, 65%, 90%); 
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f8f9fa;
+}
+
+header{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--ff);
+    font-weight: 400;
+    margin-block: 1rem;
+}
+
+main{
+    width: 100%;
+    padding-block: .75rem;
+    padding-inline: 1rem;
+}
+
+form{
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-family: var(--ff);
+    display: flex;
+    flex-direction: column;
+    row-gap: .4rem;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: .25rem;
+}
+
+label{
+    width: fit-content;
+    color: var(--green-800);
+    font-size: 1.3rem;
+}
+
+input{
+    border: var(--border);
+    width: 100%;
+    padding-inline: .45rem 1rem;
+    padding-block: .85rem;
+    outline: none;
+    border-radius: .25rem;
+    background-color: transparent;
+}
+
+input:focus{
+    border: 1px solid var(--green-200);
+}
+
+
+button{
+    margin-block-start: .4rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--green-200);
+    color: var(--green-800);
+    padding: .75rem;
+    font-size: 1.15rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#result{
+    margin-block-start: .75rem;
+    text-align: center;
+    font-size: 1.114rem;
+}
+
+#resetBtn{
+    background-color: var(--primary-color);
+    color: var(--green-400);
+}
+
+#compound{
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--green-800);
+}
+
+
+@media (width >= 768px){
+    main{
+        width: 50%;
+        margin: auto;
+    }
+}
