@@ -40,7 +40,7 @@ form.addEventListener('submit', event => {
         const compoundInterest = app.calculateCompoundInterest(1)
 
         // Format compound interest
-        const formatCompoundInterest = compoundInterest.toLocaleString(undefined, {style: "currency", currency: 'NGN'})
+        const formatCompoundInterest = compoundInterest.toLocaleString('en-NG', {style: "currency", currency: 'NGN'})
 
         // Display result
         total.innerHTML = `<p>Your compound interest is: <span id="compound">${formatCompoundInterest}</span> \u{1F60A}</p>`
