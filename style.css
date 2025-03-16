@@ -68,10 +68,13 @@ input{
     border: var(--border);
     width: 100%;
     padding-inline: .45rem 1rem;
-    padding-block: .85rem;
+    padding-block: .25rem;
     outline: none;
     border-radius: .25rem;
     background-color: transparent;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--green-800);
 }
 
 input:focus{
